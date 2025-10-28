@@ -445,7 +445,7 @@ footer .normal-text{
 }
 
 
-@media all and (max-width: 400px){
+@media all and (max-width: 450px){
     .about-me-container{
         flex-direction: display;
     }
