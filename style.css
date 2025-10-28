@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Staatliches&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+/* Font Name: Staatliches, Space Mono, Zalando Sans Expanded */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E8D6C8;
+    font-family: 'Space Mono', sans-serif;
+    color: #5D2E46;
+}
+
+.header{
+    background: #5D2E46;
+    color: #E8D6C8;
+    padding: 1rem 2rem 1rem 2rem;
+    display: flex;
+    height: 100%;
+    width: 20vw;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.logo{
+    font-family: 'Staatliches', sans-serif;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover::after {
+    width: 13vw;
+}
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.1vh;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 25rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Body */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-y: auto;
+    margin: 0 0 0 20vw;
+}
+
+/* ——————— home */
+
+.home{
+    display: flex;
+    flex-direction: column;
+    margin: 0 6vw 0 10vw;
+    padding: 0 4rem 0 0;
+    height: 100vh;
+    justify-content: center;
+}
+
+.main-title{
+    font-family: 'Staatliches';
+    font-size: 6rem;
+    line-height: 5rem;
+    padding: 0 5rem 0 0;
+    margin: 1rem 0 0.5rem 0;
+    font-weight: 2
+}
+
+.subtitle{
+    font-family: 'Zalando Sans Expanded';
+    color: #AD6A6C;
+    font-size: 1.5rem;
+}
+
+.normal-text{
+    font-size: 1.2rem;
+}
+
+.title{
+    font-family: 'Staatliches';
+    font-size: 4rem;
+    font-weight: 1;
+    line-height: 3.5rem;
+}
+
+.home img {
+    width: 20%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 2px);
+    display: block;
+}
+
+.title-and-img{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+/* ——————— about me */
+
+.about-me{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about-me .subtitle, .about-me .title{
+    text-align: center;
+}
+
+.about-me .title {
+    margin-bottom: 2rem;
+    padding: 0 20vw 0 20vw;
+}
+
+
+.about-me-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.skill-container, .skill-container .subtitle{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.skill-container{
+    margin: 0 10vw 0 10vw;
+}
+
+.skill-container .subtitle, .interest-container .subtitle{
+    color:#5D2E46;
+}
+
+.interest-container, .interest-container .subtitle{
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.interest-container{
+    margin: 0 10vw 0 10vw;
+}
+
+.subheading{
+    display: inline;
+    color: #E8D6C8;
+    background-color: #AD6A6C;
+    font-size: 1rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 1;
+}
+
+.skill-1, .skill-2, .skill-3, .interest-1, .interest-2, .insterest-3{
+    margin-top: 0.5rem;
+}
+
+.line-gap{
+    height: 100%;
+    background-color: black;
+    width: 0.1rem;
+}
+
+/* ——————— projects */
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.projects .project-header{
+    text-align:center;
+    padding: 0 20vw 0 20vw;
+}
+
+.project-header .title{
+    margin-bottom: 2rem;
+}
+
+.vid-display {
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 253px 253px;
+    grid-template-columns: 450px 450px;
+    gap: 1rem 2rem;
+}
+
+.video-grid video{
+    width: 100%;
+    filter: drop-shadow(2px 2px 2px)
+}
+
+
+/* ——————— clients */
+
+.clients{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.clients .subtitle, .clients .title{
+    padding: 0 15rem 0 15rem;
+    text-align: center;
+}
+
+.clients-container {
+    display:flex;
+    flex-direction:row;
+    gap: 2rem;
+    margin: 2rem 4rem 0 4rem;
+}
+
+.client-info {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D0ADA7;
+    padding-bottom: 2rem;
+    border-radius: 3rem;
+    filter: drop-shadow(2px 2px 2px)
+}
+
+.client-info p{
+    text-align: center;
+}
+
+.client-info img{
+    display:block;
+    width: 60%;
+    margin: 2rem auto 2rem auto;
+    border-radius: 10rem;
+}
+
+.client-info .heading{
+    font-family: 'Zalando Sans Expanded';
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.client-info .normal-text{
+    margin: 0 2rem 0 2rem;
+}
+
+
+
+/* ——————— contacts */
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    
+}
+
+.contacts .subtitle, .contacts .title{
+    text-align: center;
+}
+
+.contacts-container{
+    margin-top: 2rem;
+    display:flex;
+    flex-direction: column;
+}
+
+.email, .phone{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.email img, .phone img{
+    width: 4%;
+}
+
+/* ——————— footer */
+
+footer {
+    margin: 0 0 2vw 20vw;
+    
+}
+
+footer .normal-text{
+    color: #AD6A6C;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+
+
+
+@media all and (max-width: 1100px){
+
+    .header{
+    padding: 1rem 2rem 1rem 2rem;
+    display: flex;
+    height: 12vh;
+    width: 100%;
+    flex-direction: row;
+    position: fixed;
+    top:0;
+    z-index: 10;
+    }
+
+    main{
+        margin: 2vw 0 0 0;
+    }
+
+    .navbar a:hover::after {
+        width: 0;
+    }
+
+    .navbar a::after{
+        width: 0;
+
+    }
+
+    .navbar a:hover{
+        color:#AD6A6C;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0 0 0 0;
+        padding: auto 0 auto 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .navbar a{
+        font-size: 0.9rem;
+        position: sticky;
+  
+        justify-content: center;
+    }
+
+    footer{
+        margin: 0 0 2vw 0;
+    }
+}
+
+@media all and (max-width: 950px){
+
+    .logo{
+        font-size: 3rem;
+    }
+
+    .navbar a{
+        font-size: 0.9rem;
+    }
+    
+    .vid-display {
+        display: grid;
+        grid-template-rows: 253px 253px 235p 235px;
+        grid-template-columns: 450px ;
+        gap: 1rem 2rem;
+    }
+
+    .projects{
+        height: auto;
+    }
+
+    .clients-container {
+        flex-direction:column;
+        margin: 2rem 10rem 0 10rem;
+    }
+
+    .client-info img{
+        width: 40%;
+    }
+
+    .clients {
+        margin-top: 10rem;
+        height: auto;
+    }
+    .clients .subtitle, .clients .title{
+    padding: 0 2rem 0 2rem;
+    text-align: center;
+}
+}
+
+
+@media all and (max-width: 630px){
+    .logo{
+        font-size: 1.5rem;
+    }
+
+    .header{
+        height: 10vw;
+    }
+
+    .about-me{
+        height: 100vh;
+    }
+
+    .projects {
+        margin-top: 10rem;
+    }
+}
