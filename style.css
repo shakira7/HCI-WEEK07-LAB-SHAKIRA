@@ -94,7 +94,7 @@ main{
     line-height: 5rem;
     padding: 0 5rem 0 0;
     margin: 1rem 0 0.5rem 0;
-    font-weight: 2
+    font-weight: 2;
 }
 
 .subtitle{
@@ -249,7 +249,7 @@ main{
     display:flex;
     flex-direction:row;
     gap: 2rem;
-    margin: 2rem 4rem 0 4rem;
+    margin: 2% 2% 0 2%;
 }
 
 .client-info {
@@ -442,4 +442,41 @@ footer .normal-text{
     .projects {
         margin-top: 10rem;
     }
+}
+
+
+@media all and (max-width: 450px){
+    .about-me-container{
+        flex-direction: display;
+    }
+
+    .clients-container{
+        margin: 0% 1% 0% 1%;
+    }
+
+        .logo{
+        font-size: 1rem;
+    }
+
+        .navbar a{
+        font-size: 0.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .normal-text{
+        font-size: 0.5rem;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .main-title{
+        font-size: 3rem;
+    }
+
+
 }
