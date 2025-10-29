@@ -397,7 +397,7 @@ footer .normal-text{
     
     .vid-display {
         display: grid;
-        grid-template-rows: 253px 253px 235p 235px;
+        grid-template-rows: 253px 253px 235px 235px;
         grid-template-columns: 450px ;
         gap: 1rem 2rem;
     }
@@ -476,7 +476,17 @@ footer .normal-text{
 
     .main-title{
         font-size: 3rem;
+        margin: 0.5rem 0 0.2rem 0;
     }
 
+
+    .vid-display {
+        grid-template-rows: 169px 169px 169px 169px;
+        grid-template-columns: 300px;
+    }
+
+    .client-info .normal-text{
+        font-size: 1rem;
+    }
 
 }
