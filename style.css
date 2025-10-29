@@ -454,6 +454,11 @@ footer .normal-text{
         margin: 0% 1% 0% 1%;
     }
 
+    .clients-info {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
         .logo{
         font-size: 1rem;
     }
@@ -478,7 +483,7 @@ footer .normal-text{
     .main-title{
         font-size: 3rem;
         margin: 0.5rem 0 0.2rem 0;
-        line-height: 2rem;
+        line-height: 0;
     }
 
 
