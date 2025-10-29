@@ -451,7 +451,7 @@ footer .normal-text{
     }
 
     .clients-container{
-        margin: 0% 1% 0% 1%;
+        margin: 0% 5% 0% 5%;
     }
 
     .clients-info {
@@ -486,6 +486,10 @@ footer .normal-text{
         line-height: 2.3rem;
     }
 
+    .project-header .title{
+        margin-bottom: 2rem;
+    }
+
 
     .vid-display {
         grid-template-rows: 169px 169px 169px 169px;
@@ -495,5 +499,11 @@ footer .normal-text{
     .client-info .normal-text{
         font-size: 1rem;
     }
+
+    .footer {
+        font-size: 0.6rem;
+    }
+
+
 
 }
